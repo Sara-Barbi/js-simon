@@ -1,3 +1,4 @@
+
 numbers = [];
 
 for (let i = 0; i < 5; i++) {                             
@@ -6,12 +7,23 @@ for (let i = 0; i < 5; i++) {
     numbers.push(randomNumb);
 }     
 
-document.writeln(numbers);
+document.getElementById("numeridaricordare").innerHTML= numbers;
 
-setTimeout(questionPrompt , 3000);
+
+function disappear(){
+    document.getElementById("numeridaricordare").classList.add("none");
+    
+}
+
+setTimeout(questionPrompt , 30000);
+setTimeout(disappear , 29000);
+
 
 
 function questionPrompt(){
+
+
+
     let question = prompt("scrivi il primo numero");
     let question2 = prompt("scrivi il secondo numero");
     let question3 = prompt("scrivi il terzo numero");
@@ -19,29 +31,29 @@ function questionPrompt(){
     let question5 = prompt("scrivi il quinto numero");
     
     if(numbers.includes(parseInt(question))==true){
-        document.writeln("primo numero corretto");
+        document.writeln("primo numero corretto,");
     }else{
-        document.writeln("primo numero NON corretto");
+        document.writeln("primo numero NON corretto,");
     }
     if(numbers.includes(parseInt(question2))==true){
-        document.writeln("secondo numero corretto");
+        document.writeln("secondo numero corretto,");
     }else{
-        document.writeln("secondo numero NON corretto");
+        document.writeln("secondo numero NON corretto,");
     }
     if(numbers.includes(parseInt(question3))==true){
-        document.writeln("terzo numero corretto");
+        document.writeln("terzo numero corretto,");
     }else{
-        document.writeln("terzo numero NON corretto");
+        document.writeln("terzo numero NON corretto,");
     }
     if(numbers.includes(parseInt(question4))==true){
-        document.writeln("quarto numero corretto");
+        document.writeln("quarto numero corretto,");
     }else{
-        document.writeln("quarto numero NON corretto");
+        document.writeln("quarto numero NON corretto,");
     }
     if(numbers.includes(parseInt(question5))==true){
-        document.writeln("quinto numero corretto");
+        document.writeln("quinto numero corretto,");
     }else{
-        document.writeln("quinto numero NON corretto");
+        document.writeln("quinto numero NON corretto,");
     }
 }
 
