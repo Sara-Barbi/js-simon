@@ -22,11 +22,11 @@ setTimeout(questionPrompt , 3000);
 
 function questionPrompt(){
     let i;
-    for(i=1; i<6;i++){
+    for(i = 1; i < 6; i++){
         let question = prompt('scrivi il '+i+'° numero');
+
         if(numbers.includes(parseInt(question))==true){
-            document.writeln('<div>'+i+'° numero corretto </div>');
-            document.querySelector("div").classList.add("green");
+            document.writeln('<div id="green">'+i+'° numero corretto </div>');
             
         }else{
             document.writeln('<div id="red">'+i+'° numero ERRATO </div>');
@@ -34,7 +34,7 @@ function questionPrompt(){
         
         
     }
-
-
+       
 }
+
 
