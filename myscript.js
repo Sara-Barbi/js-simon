@@ -22,8 +22,15 @@ setTimeout(disappear , 29000);
 
 function questionPrompt(){
 
-
-
+for(let i=1; i<6;i++){
+    let question = prompt('scrivi il '+i+'° numero');
+    if(numbers.includes(parseInt(question))==true){
+        document.writeln( i+'° numero corretto, ');
+    }else{
+        document.writeln( i+'° numero ERRATO, ');
+    }
+}
+/*
     let question = prompt("scrivi il primo numero");
     let question2 = prompt("scrivi il secondo numero");
     let question3 = prompt("scrivi il terzo numero");
@@ -55,5 +62,6 @@ function questionPrompt(){
     }else{
         document.writeln("quinto numero NON corretto,");
     }
+    */
 }
 
