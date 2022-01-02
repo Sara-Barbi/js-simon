@@ -5,9 +5,14 @@ body{
     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-gradient-geometric-color-double-twelve-background-material-image_271672.jpg);
     background-size: cover;
 }
-#red{
-    color: red;
+.red{
+    color: rgb(127, 3, 75);
+    font-size: large;
+    font-weight: bold;
+
 }
-#green{
-    color: seagreen;
+.green{
+    color: rgb(229, 46, 235);
+    font-size: large;
+    font-weight: bold;
 }

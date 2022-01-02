@@ -22,19 +22,28 @@ setTimeout(questionPrompt , 3000);
 
 function questionPrompt(){
     let i;
-    for(i = 1; i < 6; i++){
-        let question = prompt('scrivi il '+i+'° numero');
+    for(i = 0; i < 5; i++){
+        let question = prompt('scrivi il '+(i+1)+'° numero');
 
         if(numbers.includes(parseInt(question))==true){
-            document.writeln('<div id="green">'+i+'° numero corretto </div>');
+            let div = document.createElement("div");
+            div.textContent=( (i+1)+'° numero corretto' + '  ' +numbers[i] );
+            div.classList.add("green");
+            let trueItem = document.getElementById("itemContainer");
+            trueItem.appendChild(div);
             
         }else{
-            document.writeln('<div id="red">'+i+'° numero ERRATO </div>');
+            let div = document.createElement("div");
+            div.textContent=( (i+1)+'° numero ERRATO'+ '  ' +numbers[i]);
+            div.classList.add("red");
+            let falseItem = document.getElementById("itemContainer");
+            falseItem.appendChild(div);
         }
         
         
     }
        
 }
+
 
 
