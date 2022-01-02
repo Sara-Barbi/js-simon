@@ -5,14 +5,63 @@ body{
     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-gradient-geometric-color-double-twelve-background-material-image_271672.jpg);
     background-size: cover;
 }
+#numeridaricordare{
+    color: rgb(11, 11, 59);
+    font-weight: bold;
+    font-size: 28px;
+}
 .red{
     color: rgb(127, 3, 75);
     font-size: large;
+    margin: 15px;
     font-weight: bold;
-
+    font-family: 'Quicksand', sans-serif;
+    
 }
 .green{
     color: rgb(229, 46, 235);
     font-size: large;
+    margin: 15px;
     font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title{
+    color: rgb(75, 34, 181);
+    font-family: 'Quicksand', sans-serif;
+}
+#itemContainer{
+    margin-top: 50px;
+}
+.num{
+    color: rgb(253, 253, 253);
+    font-size: large;
+    margin: 15px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.rememb{
+    color: rgb(3, 3, 81);
+    font-size: large;
+    margin: 15px;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.corr{
+    color: rgb(21, 133, 25);
+    font-size: large;
+    margin: 15px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.err{
+    color: rgb(245, 17, 74);
+    font-size: large;
+    margin: 15px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    
 }

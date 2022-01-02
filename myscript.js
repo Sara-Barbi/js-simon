@@ -26,18 +26,51 @@ function questionPrompt(){
         let question = prompt('scrivi il '+(i+1)+'° numero');
 
         if(numbers.includes(parseInt(question))==true){
+            let hr = document.createElement("hr");
+            
             let div = document.createElement("div");
-            div.textContent=( (i+1)+'° numero corretto' + '  ' +numbers[i] );
-            div.classList.add("green");
+            div.textContent=( (i+1)+'° numero' );
+            div.classList.add("num");
+            
+            let span2 = document.createElement("span");
+            span2.textContent=( 'CORRETTO' );
+            span2.classList.add("corr");
+            
+            let span3 = document.createElement("span");
+            span3.textContent=( numbers[i] );
+            span3.classList.add("rememb");
+
             let trueItem = document.getElementById("itemContainer");
             trueItem.appendChild(div);
-            
+            trueItem.appendChild(span2);
+            trueItem.appendChild(span3);
+            trueItem.appendChild(hr);
+
+          
         }else{
-            let div = document.createElement("div");
-            div.textContent=( (i+1)+'° numero ERRATO'+ '  ' +numbers[i]);
-            div.classList.add("red");
+            let hr = document.createElement("hr");
+            
+            let = div = document.createElement("div");
+            div.textContent=( (i+1)+'° numero');
+            div.classList.add("num");
+            
+            let span2 = document.createElement("span");
+            span2.textContent=( 'ERRATO' );
+            span2.classList.add("err");
+            
+            let span3 = document.createElement("span");
+            span3.textContent=( numbers[i] );
+            span3.classList.add("rememb");
+        
+
             let falseItem = document.getElementById("itemContainer");
             falseItem.appendChild(div);
+            falseItem.appendChild(span2);
+            falseItem.appendChild(span3);
+            falseItem.appendChild(hr);
+
+            
+
         }
         
         
