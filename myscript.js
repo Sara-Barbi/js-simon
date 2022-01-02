@@ -29,7 +29,7 @@ function questionPrompt(){
             let hr = document.createElement("hr");
             
             let div = document.createElement("div");
-            div.textContent=( (i+1)+'° numero' );
+            div.textContent=( (i+1)+'°' );
             div.classList.add("num");
             
             let span2 = document.createElement("span");
@@ -51,7 +51,7 @@ function questionPrompt(){
             let hr = document.createElement("hr");
             
             let = div = document.createElement("div");
-            div.textContent=( (i+1)+'° numero');
+            div.textContent=( (i+1)+'°');
             div.classList.add("num");
             
             let span2 = document.createElement("span");

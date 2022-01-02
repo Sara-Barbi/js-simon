@@ -4,6 +4,7 @@
 body{
     background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-gradient-geometric-color-double-twelve-background-material-image_271672.jpg);
     background-size: cover;
+
 }
 #numeridaricordare{
     color: rgb(11, 11, 59);
@@ -29,6 +30,7 @@ body{
 .title{
     color: rgb(75, 34, 181);
     font-family: 'Quicksand', sans-serif;
+    margin-top: 50px;
 }
 #itemContainer{
     margin-top: 50px;
