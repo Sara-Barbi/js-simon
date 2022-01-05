@@ -55,7 +55,7 @@ function questionPrompt(){
             div.classList.add("num");
             
             let span2 = document.createElement("span");
-            span2.textContent=( 'ERRATO' );
+            span2.textContent=( parseInt(question) + " ERRATO" );
             span2.classList.add("err");
             
             let span3 = document.createElement("span");
