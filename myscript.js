@@ -59,7 +59,7 @@ function questionPrompt(){
             span2.classList.add("err");
             
             let span3 = document.createElement("span");
-            span3.textContent=( numbers[i] );
+            span3.textContent=( numbers[i]);
             span3.classList.add("rememb");
         
 
@@ -67,11 +67,10 @@ function questionPrompt(){
             falseItem.appendChild(div);
             falseItem.appendChild(span2);
             falseItem.appendChild(span3);
-            falseItem.appendChild(hr);
-
-            
+            falseItem.appendChild(hr);  
 
         }
+
         
         
     }
